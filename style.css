@@ -64,11 +64,12 @@ header h1 {
 }
 
 .site {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  background: linear-gradient(145deg, #ffffff, #f0f0f8);
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  padding: 25px;
   text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .site img {
@@ -97,8 +98,9 @@ header h1 {
   font-weight: bold;
 }
 
-.site a:hover {
-  background-color: #45a049;
+.site:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
 /* Footer */
@@ -193,12 +195,15 @@ footer {
 /* Pulsante principale homepage */
 .hero .btn-primary {
   font-size: 1.2rem;
-  padding: 15px 30px;
-  border-radius: 50px;
-  transition: background-color 0.3s, transform 0.2s;
+  padding: 15px 40px;
+  border-radius: 50px;       /* più arrotondato */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* ombra */
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
 }
 
 .hero .btn-primary:hover {
   background-color: #45a049;
   transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
 }
+
