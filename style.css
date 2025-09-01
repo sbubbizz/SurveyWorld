@@ -207,3 +207,19 @@ footer {
   box-shadow: 0 6px 20px rgba(0,0,0,0.3);
 }
 
+.badge {
+  display: inline-block;
+  background: #ffcc00;
+  color: #333;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  font-size: 0.9em;
+}
+.recommended {
+  border: 2px solid #ffcc00;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+}
