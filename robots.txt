@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sbubbizz.github.io/surveyworld/sitemap.xml
