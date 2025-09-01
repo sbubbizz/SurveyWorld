@@ -1,0 +1,123 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 0;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #4CAF50;
+}
+
+.btn-secondary {
+  background-color: #555;
+}
+
+/* Intro Section */
+.intro {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Survey Sites – grid 3 per riga */
+.survey-sites {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.site {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.site img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.site h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.site p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.site a {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.site a:hover {
+  background-color: #45a049;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Responsive – da 3 a 1 per mobile */
+@media (max-width: 992px) {
+  .survey-sites {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .survey-sites {
+    grid-template-columns: 1fr;
+  }
+}
